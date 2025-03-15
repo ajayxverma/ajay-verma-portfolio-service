@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/main.ts",
   "scripts": {
+    "build": "rimraf dist && tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc && nodemon --watch dist/main.js",
     "dev": "ts-node-dev --respawn --watch --transpile-only src/main.ts"
